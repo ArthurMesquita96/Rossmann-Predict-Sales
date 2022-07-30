@@ -3,14 +3,17 @@ from flask import Flask, request, Response
 from rossmann.Rossmann import Rossmann
 import pickle
 import os
+import xgboost
 
 model = pickle.load(open('model/model_rossmann.pkl','rb'))
 
 app = Flask(__name__)
-
-@app.route('/rossmann/predict', methods = ['POST'])
+@app.route('/')
+def test_api():
+    return "Running..."
 
 # initialize API
+@app.route('/rossmann/predict', methods = ['POST'])
 def rossmann_predict():
     test_json = request.get_json()
     
@@ -43,4 +46,4 @@ def rossmann_predict():
         
 if __name__ == '__main__':
     port = os.environ.get('PORT',5000)
-    app.run('192.168.18.4', port=port)
+    app.run('0.0.0.0', port=port)
