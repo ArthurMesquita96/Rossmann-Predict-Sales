@@ -2,14 +2,14 @@ import pandas as pd
 from flask import Flask, request, Response
 from rossmann.Rossmann import Rossmann
 import pickle
+import os
 
-model = pickle.load(open('C:\\Users\\Notebook\\repos\\DS-Producao\\model_rossmann.pkl','rb'))
+model = pickle.load(open('C:/Users/Notebook/repos/DS-Producao/model_rossmann.pkl','rb'))
 
 app = Flask(__name__)
 
-@app.route('/rossmann/predict', methods = ['POST'])
-
 # initialize API
+@app.route('/rossmann/predict', methods = ['POST'])
 def rossmann_predict():
     test_json = request.get_json()
     
@@ -41,5 +41,5 @@ def rossmann_predict():
         Response('{}', status = 200, mimetype = 'application/json')
         
 if __name__ == '__main__':
-    port = o.environ.get('PORT':5000)
+    port = os.environ.get('PORT',5000)
     app.run('192.168.18.4',port=port)
