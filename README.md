@@ -101,7 +101,7 @@ H12. Lojas deveriam vender menos aos finais de semana.
 
 ## Resultados de Negócio
 
-### Performance total do modelo
+## Performance total do modelo
     
 Abaixo, podemos comparar 3 cenários principais, a soma real das vendas de todas as lojas durantes as 6 semanas, a soma das vendas previstas pelo modelo e a soma das vendas no cenário em que a média de vendas de cada loja é generalizda por 6 semenas
 
@@ -128,7 +128,7 @@ Segue abaixo exemplos de algumas lojas:
 
 </br>
 
-### Performance do Modelo:
+## Performance do Modelo:
 O modeo apresentou uma performance satisfatórias com um MMAPE de 10% aproximadamente
 
 </br>
