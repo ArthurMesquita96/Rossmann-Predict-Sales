@@ -244,11 +244,11 @@ Neste aplicativo, o usuário deverá informar para um bot criado no Telegram o I
 
 Para a realização dessa tarefa, foi necessário criar duas APIs cujas estruturas serão detalhadas nos topico abaixo
 
-### _9.1 API de Consulta de Previsão (Handler.py)_
+### _9.1 API de Consulta de Previsão (handler.py)_
 
 > Essa API será responsável por retornar a previsão de vendas com base nos atributos da lojas.
 
-Para que a previsão seja feita, é necessário informar à API os atributos da loja no dia em questão, como assortment, store_type, dia da semana e etc. Com base nessas informações o arquivo **_Handler.py_** carrega o modelo treinado, modela os dados aplicando as transformações e rescalings e então realiza a predição. 
+Para que a previsão seja feita, é necessário informar à API os atributos da loja no dia em questão, como assortment, store_type, dia da semana e etc. Com base nessas informações o arquivo **_handler.py_** carrega o modelo treinado, modela os dados aplicando as transformações e rescalings e então realiza a predição. 
 
 Como resposta a essa consulta, é retornado o mesmo conjunto de dados de entrada da API no formato json acrescido de um elemento que informa o valor da previsão das vendas para a(s) loja(s) e dia(s) solicitado(s).
 
@@ -260,13 +260,13 @@ A figura abaixo procura ilustrar o funcionamento desse processo
 
 <br>
 
-### _9.2 API de Mensagens Telegram (Rossmann.py)_
+### _9.2 API de Mensagens Telegram (rossmann-bot.py)_
 
 > Esta API é responsável pela comunicação com o usuário final, gerenciando as mensagens de boas vindas, de erro e de resposta às solicitações de previsão
 
-Uma vez que o usuário realiazr uma consulta informando o ID da loja a qual deseja a previsão, o arquivo **_Rossmann.py_** carrega os dados de atributos da loja que agora estão em produção (usuário não precisa mais informa-los), realiza alguns tratamentos, o transforma em json, e então realiza uma consulta na API apresentada anteriormente, a handler.py. 
+Uma vez que o usuário realiazr uma consulta informando o ID da loja a qual deseja a previsão, o arquivo **_rossmann-bot.py_** carrega os dados de atributos da loja que agora estão em produção (usuário não precisa mais informa-los), realiza alguns tratamentos, o transforma em json, e então realiza uma consulta na API apresentada anteriormente, a handler.py. 
 
-Essa API, como informado, retorna um json com o dados de entrada acrescido do valor da previsão de cada uma das lojas. Por fim, o **_Rossmann.py_** transforma esse json, soma as predições e informa o usuário por meio de uma mensagem, o valor total das previsões de venda para as próximas 6 semanas
+Essa API, como informado, retorna um json com o dados de entrada acrescido do valor da previsão de cada uma das lojas. Por fim, o **_rossmann-bot.py_** transforma esse json, soma as predições e informa o usuário por meio de uma mensagem, o valor total das previsões de venda para as próximas 6 semanas
 
 A figura abaixo busca ilustrar esse processo por completo:
 
