@@ -281,7 +281,7 @@ Ao final de todo o processo temos o modelo em produção em pleno funcionamento.
 <br>
 
 <div align="center">
-<img src="img/gif_bot.gif" width="200px">
+<img src="img/gif_bot.gif" width="250px">
 </div>
 </br>
 
