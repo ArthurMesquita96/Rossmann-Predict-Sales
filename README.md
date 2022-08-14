@@ -8,7 +8,7 @@
 
 # O Problema de Negócio 
 
-<img src="img/Rossmann_store.jpg" width="220px" align='right'>
+<img src="img/rossmann_store1.jpg" width="220px" align='right'>
 
 <p align = 'left'>
 
