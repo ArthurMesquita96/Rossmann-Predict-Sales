@@ -80,7 +80,7 @@ Abaixo é exibido algumas das hipóteses e sua posterior validação ou invalida
 - Verdadeiro. Lojas com maior diversidade de produtos vendem 18% a mais, em média, que as lojas com diversidade estendida
 
 <div align="center">
-<img src="img/H1.png" width="700px">
+<img src="img/H1.png" width="1000px">
 </div>
 </br>
 
@@ -89,7 +89,7 @@ Abaixo é exibido algumas das hipóteses e sua posterior validação ou invalida
 - Falso, após o dia 10, as vendas são em média 8% menores
 
 <div align="center">
-<img src="img/H11.png" width="700px">
+<img src="img/H11.png" width="1000px">
 </div>
 </br>
 
@@ -98,7 +98,7 @@ Abaixo é exibido algumas das hipóteses e sua posterior validação ou invalida
 - Falso, as vendas nos finais de semana são em média 22,5% maiore que nos dias úteis
 
 <div align="center">
-<img src="img/H12.png" width="700px">
+<img src="img/H12.png" width="1000px">
 </div>
 </br>
 
