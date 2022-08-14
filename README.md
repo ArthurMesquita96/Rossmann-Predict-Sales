@@ -5,10 +5,17 @@
 </div>
 </br>
 
+
 # O Problema de Negócio 
 
-- O CFO (Chief Financial Officer) da Rossmann pretende fazer uma reforma em todas as unidades da rede, para isso, uma parcela do faturamento de cada loja deverá ser destinada para reforma da mesma nas próximas 6 semanas
-- Assim, a fim de iniciar o processo de reformas, o CFO solicitou uma previsão de vendas de cada uma das unidades da Rossmann para as próximas 6 semanas com o objetivo de ter uma maior previsibilidade das receitas de cada loja e poder alocar os recursos de forma mais eficiente
+<img src="img/Rossmann_store.jpg" width="220px" align='right'>
+
+<p align = 'left'>
+
+O CFO (Chief Financial Officer) da Rossmann pretende fazer uma reforma em todas as unidades da rede, para isso, uma parcela do faturamento de cada loja deverá ser destinada para reforma da mesma nas próximas 6 semanas
+
+Assim, a fim de iniciar o processo de reformas, o CFO solicitou uma previsão de vendas de cada uma das unidades da Rossmann para as próximas 6 semanas com o objetivo de ter uma maior previsibilidade das receitas de cada loja e poder alocar os recursos de forma mais eficiente
+<p>
 
 <br>
 
