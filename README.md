@@ -242,7 +242,9 @@ Com o modelo selecionado, treinado e avaliado com uma boa performance, chegou a 
 
 Neste aplicativo, o usuário deverá informar para um bot criado no Telegram o ID da loja a qual deseja obter a previsão de vendas nas próximas 6 semanas. Assim, o bot retornará uma mensagem com a previsão
 
-Para a realização dessa tarefa, foi necessário criar duas APIs cujas estruturas serão detalhadas nos topico abaixo
+Para a realização dessa tarefa, foi necessário criar duas APIs cujas estruturas serão detalhadas nos topico abaixo.
+
+Para hostear essas aplicações, foi utilizado o [Heroku](heroku.com). Nessa cloud, a criação de uma conta free já permite o deploy de modelos e pequenas aplicações, sendo o suficiente para o objetivo desse projeto.
 
 ### _9.1 API de Consulta de Previsão (handler.py)_
 
